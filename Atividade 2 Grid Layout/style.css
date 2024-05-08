@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap');
+
+body {
+    min-height: 100vh;
+}
+
+.container {
+    color: white;
+    font-family: 'Inconsolata' sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.8em;
+    height: 40rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+    "Header Header Header"
+    "SideBar Content1 Content1"
+    "SideBar Content2 Content3"
+    "Footer Footer Footer";
+}
+
+.Header {
+    background-color: rgb(255, 174, 0);
+    grid-area: Header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.SideBar {
+    background-color: rgb(238, 75, 0);
+    grid-area: SideBar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.Content1 {
+    background-color: rgb(255, 0, 0);
+    grid-area: Content1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.Content2 {
+    background-color: rgb(255, 0, 212);
+    grid-area: Content2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.Content3 {
+    background-color: rgb(255, 0, 212);
+    grid-area: Content3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.Footer {
+    background-color: rgb(255, 174, 0);
+    grid-area: Footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
